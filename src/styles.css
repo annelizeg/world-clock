@@ -1,7 +1,97 @@
+body {
+  /* background-image: url(../img/abstract-wave-pawel-czerwinski.jpg); */
+  /* background-image: url(../img/clock-photo-jakob-braun.jpg); */
+  background-image: url(../img/heap-of-clocks-jon-tyson.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(83, 74, 68, 0.9);
+  /* background-color: rgba(150, 128, 89, 0.8); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+
+  /* background-image: url(../img/abstract-wave-pawel-czerwinski.jpg); */
+  /* background-size: cover; */
+}
+
 h1 {
   text-align: center;
+  font-size: 42px;
+  padding-right: 20px;
+  /* color: black; */
+}
+
+h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+select {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px 8px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+a {
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(../img/heap-of-clocks-jon-tyson.jpg); */
+  /* background-size: cover; */
+}
+
+.gold-clock {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border-bottom: none;
+}
+
+.date {
+  padding: 10px 0;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
 }
 
 footer {
   text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
 }
