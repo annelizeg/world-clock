@@ -20,8 +20,13 @@ function displaySelectedCity(event) {
   clearInterval(intervalId2);
 
   let cityTimeZone = event.target.value;
-  let cityName = event.target.value.replace("_", " ").split("/")[1];
-  let cityNameLowercase = event.target.value
+
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityNameLowercase = cityTimeZone
     .toLowerCase()
     .replace("_", "-")
     .split("/")[1];
