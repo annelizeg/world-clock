@@ -44,10 +44,6 @@ function displaySelectedCity(event) {
     </div> 
     <a href="/">All cities</a>`;
 
-    console.log(cityNameLowercase);
-    console.log(cityTimeZone);
-    console.log(cityDisplayElement);
-
     updateCityTimeDate(cityNameLowercase, cityTimeZone);
     intervalId = setInterval(
       updateCityTimeDate,
@@ -66,6 +62,10 @@ intervalId = setInterval(
   "adelaide",
   "Australia/Adelaide"
 );
+
+// Paris Time & Date
+updateCityTimeDate("paris", "Europe/Paris");
+intervalId = setInterval(updateCityTimeDate, 1000, "paris", "Europe/Paris");
 
 // New York Time & Date
 updateCityTimeDate("new-york", "America/New_York");
